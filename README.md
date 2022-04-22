@@ -1,2 +1,7 @@
 # University Website Project
-Web Development final project
+University Final Project is under develop...
+
+Languages:
+- HTML
+- CSS
+- Vanilla JavaScript
