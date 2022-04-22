@@ -1,0 +1,79 @@
+:root {
+  /* Color Variables */
+  /* Main Colors */
+  --mainOrange: #f0b90b;
+  --mainLightOrange: #fcd535;
+  --mainBlue: #40acf1;
+  --mainDarkBlue: #212833;
+  --mainGreen: #2dcd95;
+  --mainRed: #cf304a;
+  --mainBlack: #2d3436;
+  --mainLight: #ffffff;
+  --mainLowLight: #fafafa;
+  /* Hover Colors */
+  /* Active Colors */
+  /* Time Variables */
+  --transitionTime: 0.4s;
+  /* Shadow Variables */
+}
+
+@font-face {
+  font-family: "Vazir";
+  src: url("../fonts/Vazir/Vazir.eot"), url("../fonts/Vazir/Vazir.ttf"), url("../fonts/Vazir/Vazir.woff"), url("../fonts/Vazir/Vazir.woff2");
+}
+
+body {
+  direction: rtl;
+  font-family: "Vazir";
+}
+
+/* Defaults */
+a {
+  text-decoration: none;
+}
+
+.main {
+  background-color: var(--mainLight);
+}
+
+.navbar {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  gap: 25px;
+  background-color: var(--mainLight);
+}
+
+.navbar .navbar-brand {
+  font-size: 20px;
+  color: var(--mainBlack);
+  font-weight: bold;
+  transition: var(--transitionTime);
+}
+.navbar .navbar-brand:hover {
+  color: var(--mainOrange);
+}
+
+.navbar .navbar-container {
+  display: flex;
+  align-items: center;
+}
+
+.navbar .navbar-items {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar .navbar-items .nav-item {
+  list-style: none;
+  float: right;
+  padding: 0 12px;
+}
+
+.navbar .navbar-items .nav-item .nav-link {
+  color: var(--mainBlack);
+}
+
+.main header {
+  background-color: var(--mainLowLight);
+}
