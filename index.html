@@ -4,11 +4,9 @@
     <title>Document</title>
     <link rel="stylesheet" href="./style/style.css" />
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-    <style>
-      h1 {
-        text-align: center;
-      }
-    </style>
+    <!-- Slick Carousel Styles -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css" />
   </head>
   <body>
     <div class="navbar">
@@ -18,7 +16,7 @@
       </div>
       <div class="navbar-container">
         <ul class="navbar-items">
-          <li class="nav-item">
+          <li class="nav-item active">
             <a href="./index.html" class="nav-link"><ion-icon name="home"></ion-icon> <span>خانه</span></a>
           </li>
           <li class="nav-item">
@@ -48,53 +46,146 @@
         </ul>
       </div>
     </div>
+
+    <!-- Main Container -->
     <div class="main">
+      <!-- Header Content -->
       <header>
         <div class="container">
+          <!-- Heading -->
           <div class="heading">
             <h1>خرید و فروش ارز دیجیتال امن و مستقیم</h1>
             <p>دنیای ارزدیجیتال نیاز به سیستم های امن و ساده و شیک برای معامله دارد.</p>
             <button class="btn btn-main">ثبت نام کنید</button>
           </div>
-          <div class="market">
+          <!-- Heading -->
+
+          <!-- Market Slider -->
+          <div class="market slider">
             <div class="coin-item">
               <h6 class="title">بیتکوین</h6>
               <div class="price">1,122,000,002 تومان</div>
-              <div class="percentage red">-2.02 %</div>
+              <div class="percentage red">- 2.02 %</div>
             </div>
             <div class="coin-item">
               <h6 class="title">اتریوم</h6>
               <div class="price">84,000,057 تومان</div>
-              <div class="percentage red">-0.59 %</div>
+              <div class="percentage red">- 0.59 %</div>
             </div>
             <div class="coin-item">
               <h6 class="title">بایننس کوین</h6>
               <div class="price">11,522,000 تومان</div>
-              <div class="percentage green">+1.36 %</div>
+              <div class="percentage green">+ 1.36 %</div>
             </div>
             <div class="coin-item">
               <h6 class="title">اتریوم کلاسیک</h6>
               <div class="price">999,423 تومان</div>
-              <div class="percentage green">+1.01 %</div>
+              <div class="percentage green">+ 1.01 %</div>
             </div>
             <div class="coin-item">
               <h6 class="title">دوج کوین</h6>
               <div class="price">3,840 تومان</div>
-              <div class="percentage green">+2.96 %</div>
+              <div class="percentage green">+ 2.96 %</div>
             </div>
             <div class="coin-item">
               <h6 class="title">تتر</h6>
               <div class="price">28,260 تومان</div>
-              <div class="percentage green">+0.21 %</div>
+              <div class="percentage green">+ 0.21 %</div>
             </div>
           </div>
+          <!-- Market Slider -->
         </div>
       </header>
+      <!-- Header Content -->
+
+      <!-- Body Content -->
+      <div class="container">
+        <!-- Price List Container -->
+        <div class="price-list content-container">
+          <div class="content-title">
+            <h3>لیست ارز ها</h3>
+          </div>
+          <div class="heading">
+            <div class="heading-title">نام ارز</div>
+            <div class="heading-title">قیمت</div>
+            <div class="heading-title">تغییرات</div>
+            <div class="heading-title">ارزش</div>
+          </div>
+          <div class="coin-items">
+            <a href="#BTC" class="coin-item">
+              <div class="coin-profile">
+                <div class="coin-logo">
+                  <img src="./images/btc.png" alt="name" />
+                </div>
+                <div class="coin-name">بیتکوین</div>
+                <div class="coin-tag">BTC</div>
+              </div>
+              <div class="coin-price">1,122,000,002 تومان</div>
+              <div class="coin-percent red">- 2.02 %</div>
+              <div class="coin-value">19.8M</div>
+            </a>
+            <a href="#ETH" class="coin-item">
+              <div class="coin-profile">
+                <div class="coin-logo">
+                  <img src="./images/eth.png" alt="name" />
+                </div>
+                <div class="coin-name">اتریوم</div>
+                <div class="coin-tag">ETH</div>
+              </div>
+              <div class="coin-price">84,000,057 تومان</div>
+              <div class="coin-percent red">- 0.59 %</div>
+              <div class="coin-value">16M</div>
+            </a>
+            <a href="#USDT" class="coin-item">
+              <div class="coin-profile">
+                <div class="coin-logo">
+                  <img src="./images/usdt.png" alt="name" />
+                </div>
+                <div class="coin-name">تتر</div>
+                <div class="coin-tag">USDT</div>
+              </div>
+              <div class="coin-price">28,260 تومان</div>
+              <div class="coin-percent green">+ 0.21 %</div>
+              <div class="coin-value">30M</div>
+            </a>
+            <a href="#BNB" class="coin-item">
+              <div class="coin-profile">
+                <div class="coin-logo">
+                  <img src="./images/bnb.png" alt="name" />
+                </div>
+                <div class="coin-name">بایننس کوین</div>
+                <div class="coin-tag">BNB</div>
+              </div>
+              <div class="coin-price">11,522,000 تومان</div>
+              <div class="coin-percent green">+ 1.36 %</div>
+              <div class="coin-value">14M</div>
+            </a>
+            <a href="#DOGE" class="coin-item">
+              <div class="coin-profile">
+                <div class="coin-logo">
+                  <img src="./images/doge.png" alt="name" />
+                </div>
+                <div class="coin-name">دوج کوین</div>
+                <div class="coin-tag">DOGE</div>
+              </div>
+              <div class="coin-price">3,840 تومان</div>
+              <div class="coin-percent green">+ 2.96 %</div>
+              <div class="coin-value">10M</div>
+            </a>
+          </div>
+        </div>
+        <!-- Price List Container -->
+      </div>
+      <!-- Body Content -->
     </div>
 
+    <!-- Jquery -->
+    <script src="./js/jquery.js"></script>
     <!-- Ion Icons -->
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <!-- Slick Carousel -->
+    <script type="text/javascript" src="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"></script>
     <!-- Custom Scripts -->
     <script src="./js/custom.js"></script>
   </body>
