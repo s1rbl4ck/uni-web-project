@@ -48,7 +48,7 @@ body {
   width: 0.5rem;
 }
 ::-webkit-scrollbar-track {
-  background: $mainLight;
+  background: var(--mainLight);
 }
 ::-webkit-scrollbar-thumb {
   background: #ccc;
@@ -353,6 +353,7 @@ a {
 .app-info .app-content {
   display: grid;
   grid-template-columns: 50% 50%;
+  gap: 20px;
 }
 .app-info .app-picture {
   position: relative;
@@ -361,8 +362,23 @@ a {
   width: 100%;
 }
 .app-info .app-items {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 20px;
+}
+
+.app-info .app-items .app-item {
+  background-color: var(--mainHighLight);
+  border-radius: var(--mainRadius);
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
+  align-self: center;
+  text-align: center;
+  color: var(--mainBlack);
+  font-size: 25px;
+  padding: 40px;
+}
+.app-info .app-items .app-item .app-icon ion-icon {
+  font-size: 40px;
 }
 /* Main Footer Section */
 
