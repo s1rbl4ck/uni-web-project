@@ -2,18 +2,23 @@
   <head>
     <meta charset="UTF-8" />
     <title>Document</title>
-    <link rel="stylesheet" href="./style/style.css" />
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <!-- Slick Carousel Styles -->
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css" />
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css" />
+    <link rel="stylesheet" type="text/css" href="style/slick.css" />
+    <link rel="stylesheet" type="text/css" href="style/slick-theme.css" />
+    <!-- bootstrap Styles -->
+    <link rel="stylesheet" href="style/bootstrap.min.css" />
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="style/main.css" />
   </head>
   <body>
+    <!-- Navbar -->
     <div class="navbar">
       <a href="/" class="navbar-brand">Web Exchange</a>
-      <div class="navbar-collapse">
+      <div class="navbar-sm">
         <ion-icon class="menu-icon" name="grid-outline"></ion-icon>
       </div>
+      <div class="content-cover"></div>
       <div class="navbar-container">
         <ul class="navbar-items">
           <li class="nav-item active">
@@ -99,8 +104,8 @@
       <!-- Header Content -->
 
       <!-- Body Content -->
+      <!-- Price List Container -->
       <div class="container">
-        <!-- Price List Container -->
         <div class="price-list content-container">
           <div class="content-title">
             <h3>لیست ارز ها</h3>
@@ -174,9 +179,11 @@
             </a>
           </div>
         </div>
-        <!-- Price List Container -->
+      </div>
+      <!-- Price List Container -->
 
-        <!-- App Container -->
+      <!-- App Container -->
+      <div class="container">
         <div class="app-info content-container">
           <div class="content-title">
             <h3>در هرکجا و هر مکان ترید کنید</h3>
@@ -204,28 +211,95 @@
                 </div>
                 <div class="app-title">مستقیم</div>
               </a>
-              <a href="#app-direct" class="app-item">
+              <a href="#app-direct" class="app-item qr-item">
                 <div class="app-icon">
                   <ion-icon name="qr-code-outline"></ion-icon>
                 </div>
                 <div class="app-title">اسکن کد</div>
+                <div class="qr-code">
+                  <img src="./images/qr.png" alt="QR Code" />
+                </div>
               </a>
             </div>
           </div>
         </div>
-        <!-- App Container -->
       </div>
+      <!-- App Container -->
+
+      <!-- support Content -->
+      <div class="container">
+        <div class="support-contnet content-container">
+          <div class="content-title">
+            <h3>در هرکجا و هر مکان ترید کنید</h3>
+          </div>
+          <div class="support-items" id="#support-item">
+            <a href="#support-item" class="support-item">
+              <div class="support-icon">
+                <img src="./images/support/24hour.svg" alt="24 Hour Picture" />
+              </div>
+              <div class="support-title">پشتیبانی 24/7</div>
+              <div class="support-desc">در صورت بروز هرگونه مشکل بدون درنگ با پشتیبانی تماس بگیرید.</div>
+            </a>
+            <a href="#support-item" class="support-item">
+              <div class="support-icon">
+                <img src="./images/support/blog.svg" alt="Blog Picture" />
+              </div>
+              <div class="support-title">وبلاگ اکسچنج</div>
+              <div class="support-desc">با وبلاگ اکسچنج فن های ترید و درامد از ارز های دیجیتال یاد بگیرید.</div>
+            </a>
+            <a href="#support-item" class="support-item">
+              <div class="support-icon">
+                <img src="./images/support/security.svg" alt="Security Picture" />
+              </div>
+              <div class="support-title">امنیت حساب شما</div>
+              <div class="support-desc">امنیت حساب خود را به ما بسپارید با متد های امنیتی بروز.</div>
+            </a>
+            <a href="#support-item" class="support-item">
+              <div class="support-icon">
+                <img src="./images/support/exchange.svg" alt="Security Picture" />
+              </div>
+              <div class="support-title">تبدیل درامد دلاری سریع</div>
+              <div class="support-desc">ارز های خود را سریع به تومان تبدیل و حتی با کاربران معامله کنید.</div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- support Content -->
+
+      <!-- Join Content -->
+      <div class="join-content content-container">
+        <div class="content-title">
+          <h4>همین حالا ترید را شروع کنید.</h4>
+        </div>
+        <div class="join-items">
+          <a href="register.html" class="join-item">
+            <button class="btn btn-main">ثبت نام</button>
+          </a>
+          <a href="login.html" class="join-item">
+            <button class="btn btn-main">ورود</button>
+          </a>
+        </div>
+      </div>
+      <!-- Join Content -->
+
       <!-- Body Content -->
     </div>
 
+    <!-- Footer -->
+    <footer>
+      <div class="container"></div>
+    </footer>
+
     <!-- Jquery -->
-    <script src="./js/jquery.js"></script>
+    <script src="js/jquery.js"></script>
+    <!-- Bootstrap -->
+    <script src="js/bootstrap.bundle.min.js"></script>
     <!-- Ion Icons -->
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <!-- Slick Carousel -->
-    <script type="text/javascript" src="./js/slick.min.js"></script>
+    <script type="text/javascript" src="js/slick.min.js"></script>
     <!-- Custom Scripts -->
-    <script src="./js/custom.js"></script>
+    <script src="js/custom.js"></script>
   </body>
 </html>

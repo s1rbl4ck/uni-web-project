@@ -1,27 +1,31 @@
 // Menu Actions
-function menuTrigger(e, m) {
+function menuTrigger(e, m, c) {
   var t = e.target;
   if (t.classList.contains("menu-icon")) {
     var a = t.getAttribute("name");
     if (a === "grid-outline") {
       t.setAttribute("name", "grid");
       m.classList.add("visible");
+      c.classList.add("visible");
     } else {
       t.setAttribute("name", "grid-outline");
       m.classList.remove("visible");
+      c.classList.remove("visible");
     }
   }
 }
 var i = document.querySelector(".menu-icon");
 var m = document.querySelector(".navbar-container");
+var c = document.querySelector(".content-cover");
 i.addEventListener("click", function (e) {
-  menuTrigger(e, m);
+  menuTrigger(e, m, c);
 });
 document.addEventListener("click", function (e) {
   if (!e.target.closest(".navbar-container") && !e.target.classList.contains("menu-icon")) {
     if (m.classList.contains("visible")) {
       i.setAttribute("name", "grid-outline");
       m.classList.remove("visible");
+      c.classList.remove("visible");
     }
   }
 });
