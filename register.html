@@ -1,0 +1,165 @@
+<html lang="fa">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <!-- Slick Carousel Styles -->
+    <link rel="stylesheet" type="text/css" href="style/slick.css" />
+    <link rel="stylesheet" type="text/css" href="style/slick-theme.css" />
+    <!-- bootstrap Styles -->
+    <link rel="stylesheet" href="style/bootstrap.min.css" />
+    <!-- Toastify -->
+    <link rel="stylesheet" href="style/toastify.min.css" />
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="style/main.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <div class="navbar">
+      <a href="/" class="navbar-brand">Web Exchange</a>
+      <div class="navbar-sm">
+        <ion-icon class="menu-icon" name="grid-outline"></ion-icon>
+      </div>
+      <div class="content-cover"></div>
+      <div class="navbar-container">
+        <ul class="navbar-items">
+          <li class="nav-item active">
+            <a href="./index.html" class="nav-link"><ion-icon name="home"></ion-icon> <span>خانه</span></a>
+          </li>
+          <li class="nav-item">
+            <a href="trade.html" class="nav-link"><ion-icon name="swap-horizontal"></ion-icon> <span>ترید</span></a>
+          </li>
+          <li class="nav-item">
+            <a href="price.html" class="nav-link"><ion-icon name="cash"></ion-icon> <span>قیمت</span></a>
+          </li>
+          <li class="nav-item">
+            <a href="faq.html" class="nav-link"><ion-icon name="help-circle"></ion-icon> <span>سوالات متداول</span></a>
+          </li>
+          <li class="nav-item">
+            <a href="about.html" class="nav-link"><ion-icon name="information-circle"></ion-icon> <span>درباره</span></a>
+          </li>
+          <li class="nav-item">
+            <a href="contact.html" class="nav-link"><ion-icon name="call"></ion-icon> <span>تماس</span></a>
+          </li>
+        </ul>
+        <ul class="navbar-items">
+          <li class="nav-item">
+            <a href="login.html" class="nav-link"><ion-icon name="person"></ion-icon> <span>ورود</span></a>
+          </li>
+          <i class="line-seperator"></i>
+          <li class="nav-item">
+            <a href="register.html" class="nav-link"><ion-icon name="log-in"></ion-icon> <span>ثبت نام</span></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Main Container -->
+    <div class="main">
+      <!-- Body Content -->
+      <div class="auth-content">
+        <!-- Authentication Form -->
+        <form class="auth-form" type="register">
+          <h4 class="text-center mb-4">ساخت حساب کاربری</h4>
+          <div class="row">
+            <div class="form-group col-12 col-md-6 col-lg-6">
+              <label for="name">نام و نام خانوادگی</label>
+              <input type="text" class="form-control" name="name" placeholder="نام و نام خانوادگی خود را وارد کنید." />
+            </div>
+            <div class="form-group col-12 col-md-6 col-lg-6">
+              <label for="username">نام کاربری</label>
+              <input type="text" class="form-control" name="username" placeholder="نام کاربری خود را وارد کنید." />
+            </div>
+            <div class="form-group">
+              <label for="email">ایمیل</label>
+              <input type="text" class="form-control" name="email" placeholder="ایمیل خود را وارد کنید." />
+            </div>
+            <div class="form-group position-relative col-12 col-lg-6 col-md-6">
+              <label for="password">رمز عبور</label>
+              <input type="password" class="form-control" name="password" placeholder="رمز عبور خود را وارد کنید." />
+              <span class="visible-status">
+                <ion-icon name="eye-outline"></ion-icon>
+              </span>
+            </div>
+            <div class="form-group position-relative col-12 col-lg-6 col-md-6">
+              <label for="confirm_password">تکرار رمز عبور</label>
+              <input type="password" class="form-control" name="confirm_password" placeholder="تکرار رمز عبور خود را وارد کنید." />
+              <span class="visible-status">
+                <ion-icon name="eye-outline"></ion-icon>
+              </span>
+            </div>
+          </div>
+          <div class="form-group d-flex justify-content-end">
+            <div class="link-login">حساب کاربری دارید؟ <a href="login.html">ورود به حساب کاربری</a></div>
+          </div>
+          <div class="form-group">
+            <button class="btn btn-main auth-btn">ثبت نام</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <div class="content-container">
+        <div class="container">
+          <div class="footer-items">
+            <div class="footer-item">
+              <h4>درباره</h4>
+              <ul>
+                <li><a href="#">درباره ما</a></li>
+                <li><a href="#">قوانین</a></li>
+                <li><a href="#">حریم خصوصی</a></li>
+                <li><a href="#">تماس با ما</a></li>
+              </ul>
+            </div>
+            <div class="footer-item">
+              <h4>سرویس ها</h4>
+              <ul>
+                <li><a href="#">ترید</a></li>
+                <li><a href="#">معامله P2P</a></li>
+                <li><a href="#">خرید از بازار</a></li>
+                <li><a href="#">دریافت وام</a></li>
+              </ul>
+            </div>
+            <div class="footer-item">
+              <h4>مقاله ها</h4>
+              <ul>
+                <li><a href="#">مقاله 1</a></li>
+                <li><a href="#">مقاله 2</a></li>
+                <li><a href="#">مقاله 3</a></li>
+                <li><a href="#">مقاله 4</a></li>
+              </ul>
+            </div>
+            <div class="footer-item">
+              <h4>شبکه های اجتماعی</h4>
+              <ul>
+                <li><a href="#">اینستاگرام</a></li>
+                <li><a href="#">تلگرام</a></li>
+                <li><a href="#">لینکدین</a></li>
+                <li><a href="#">توییتر</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="copyright-container">
+        <h5>ساخته شده توسط <a href="https://instagram.com/s1rbl4ck">Danesh Habibi</a></h5>
+      </div>
+    </footer>
+
+    <!-- Jquery -->
+    <script src="js/jquery.js"></script>
+    <!-- Bootstrap -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- Ion Icons -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <!-- Slick Carousel -->
+    <script type="text/javascript" src="js/slick.min.js"></script>
+    <!-- Toastify -->
+    <script src="js/toastify.js"></script>
+    <!-- Custom Scripts -->
+    <script src="js/custom.js"></script>
+  </body>
+</html>
