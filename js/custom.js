@@ -73,11 +73,30 @@ $(".slider").slick({
 // Handle Form
 $(".auth-form").submit(function (e) {
   e.preventDefault();
-
   var type = $(this).attr("type");
+  var panel = type === "login" ? "panel.html" : "login.html";
+
+  if (type === "login") {
+    var username = document.querySelector("#username").value;
+    var password = document.querySelector("#password").value;
+    if (username !== "s1rbl4ck" || password !== "123456") {
+      Toastify({
+        text: "اطلاعات وارد شده نادرست می باشد !",
+        duration: 3000,
+        close: false,
+        gravity: "bottom", // `top` or `bottom`
+        position: "right", // `left`, `center` or `right`
+        rtl: true,
+        stopOnFocus: true, // Prevents dismissing of toast on hover
+        backgroundColor: "#cf304a",
+      }).showToast();
+      return;
+    }
+  }
+
   var message;
   if (type === "login") {
-    message = "ورود با موفقیت انجام شد";
+    message = "کاربر " + username + " ورود با موفقیت انجام شد";
   } else {
     message = "حساب کاربری شما با موفقیت ساخته شد";
   }
@@ -97,8 +116,8 @@ $(".auth-form").submit(function (e) {
       backgroundColor: "#2dcd95",
     }).showToast();
     setTimeout(() => {
-      window.location.href = "index.html";
-    }, 1500);
+      window.location.href = panel;
+    }, 1250);
   }, 2000);
 });
 

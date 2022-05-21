@@ -70,7 +70,16 @@ select {
 a {
   text-decoration: none;
 }
-
+input.form-check-input {
+  cursor: pointer;
+}
+input.form-check-input:focus {
+  border-color: var(--mainOrange);
+}
+input.form-check-input:checked {
+  background-color: var(--mainOrange);
+  border-color: var(--mainOrange);
+}
 .line-seperator {
   min-width: 0px;
   margin: auto 5px;
@@ -537,11 +546,12 @@ footer:hover .copyright-container {
 
 /* Auth Content */
 .auth-content {
-  height: 60vh;
+  height: 70vh;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  padding: 20px;
 }
 .auth-form {
   width: 100%;
@@ -550,6 +560,7 @@ footer:hover .copyright-container {
   background-color: var(--mainHighLight);
   padding: 40px;
   border-radius: var(--mainRadius);
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 10px;
 }
 .auth-form .form-group:not(:last-child) {
   margin-bottom: 20px;
@@ -582,6 +593,7 @@ footer:hover .copyright-container {
 }
 
 .auth-form .visible-status {
+  height: 22px;
   position: absolute;
   top: 37px;
   left: 20px;
